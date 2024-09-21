@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Almarai", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+html ,body{
+    height: 100%;
+
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--background-color);
+    display: flex;
+}
+:root{
+    --white-color: #ffffff;
+    --background-color: #f8fafc;
+    --foreground-color: #1e293b;
+  
+    --primary-color: #4f46e5;
+    --primary-light-color: #6366f1;
+    --primary-dark-color: #3730a3;
+    --primary-color-opacity: rgba(79, 70, 229, 0.25);
+}
+.Score-card{
+    
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    border-radius: 4rem;
+    display: flex;
+
+    
+}
+svg{
+    width: 2rem;
+    height: 2rem;
+}
+.score-card,
+.score-result,
+.score-summary {
+  border-radius: 4rem;
+}
+
+.score-result,.score-summary{
+    flex: 1;
+    
+}
+.score-result,.score-summary{
+    padding:4rem;
+    
+}
+
+.score-result{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+    gap: 4rem;
+    background-image: linear-gradient(to bottom ,var(--primary-dark-color),var(--primary-color));
+
+}
+.score-result h2,.score-summary h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.score-result h2{
+    
+    color: var(--white-color);
+    opacity: 0.72;
+}
+.Score-result-text ,.Score-result-text p,.Score-result-number p{
+    text-align: center;
+}
+.score-summary{
+    background: var(--white-color);
+}
+.Score-result-number{
+    --size:20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size);
+    color: var(--white-color);
+    height: var(--size);
+    background-image: linear-gradient(
+    to bottom, 
+    var(--primary-dark-color),
+    var(--primary-color-opacity)
+    );
+
+    border-radius: 100%;
+   
+}
+.score-resute-main{
+    font-size: 6rem;
+    font-weight: 700;
+    
+}
+.score-result-opasity{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.Score-result-text h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 1.6rem;
+}
+.Score-result-text p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 21rem;
+    color: var(--white-color);
+    opacity: 0.6;
+    margin-bottom: 2rem;
+    
+}
+.score-summary h2{
+    color: var(--foreground-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.score-summary-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 4rem;
+}
+.score-summary-list li{
+    display: flex;
+    background-color: var(--primary-light-color);
+    align-items: center;
+    padding: 1.6rem 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--list-item-background-color);
+    color: var(--list-item-color);
+    
+    
+}
+.score-summary-list li.red{
+    --list-item-background-color: #fef2f2;
+    --list-item-color:#ef4444;
+}
+.score-summary-list li.yellow {
+    --list-item-color: #eab308;
+    --list-item-background-color: #fefce8;
+  }
+  
+  .score-summary-list li.green {
+    --list-item-color: #22c55e;
+    --list-item-background-color: #f0fdf4;
+  }
+  
+  .score-summary-list li.blue {
+    --list-item-color: #3b82f6;
+    --list-item-background-color: #eff6ff;
+  }
+  .svg{
+    --size:2rem;
+    width: var(--size);
+    height: var(--size);
+  }
+  .score-summary-list h3{
+    margin-left: 1.4rem;
+    font-size: 1.6;
+    font-weight: 500;
+  }
+  .score-summary-list li p{
+    color: var(--foreground-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .score-summary-list .slash, .score-total{
+    
+    opacity: 0.5;
+  }
+  .score-summary-list .slash{
+    margin: 0 0.4rem;
+  }
+
+.score-summary-list li p{
+    margin-left: auto;
+}
+
+.button-primary {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white-color);
+  background-color: var(--foreground-color);
+  padding: 1.6rem;
+  border: none;
+  border-radius: 10rem;
+  margin-top: auto;
+}
+
